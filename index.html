@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>List</title>
+</head>
+
+<body>
+    <div class="overal-container">
+        <form id="form" name="add_student">
+            <div class="data name">
+                <label for="name">Имя</label>
+                <input type='text' id="name" name="name" placeholder="Name of a student">
+            </div>
+            <div class="data age">
+                <label for="age">Возраст</label>
+                <input type="number" id="age" name="age" placeholder="Age of a student">
+            </div>
+            <button id="submit">Показать</button>
+        </form>
+
+        <div class="st_list">
+            <div class="list_top">
+                <span class="name_char">No</span>
+                <span class="name_char">Имя студента</span>
+                <span class="name_char">Год рождения</span>
+                <span class="action">Действия</span>
+            </div>
+            <div class="st_container"></div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <div class="n_change n_y_cng">
+                    <label for="name_changer">Name:</label>
+                    <input type="text" id="name_changer" placeholder="Change the name">
+                </div>
+                <div class="y_change n_y_cng">
+                    <label for="age_changer">Age:</label>
+                    <input type="number" id="age_changer" placeholder="Change the age">
+                </div>
+            </div>
+            <div class="btns">
+                <button class="close_modal">Close</button>
+                <button class="submit_changes">Change</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
