@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Score-Table</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="adding-space">
+      <h2 id="group-name">JavaScript - 310</h2>
+      <div class="buttons">
+        <button id="add-student">Добавить новенького</button>
+        <button id="rename-group">Переименовать группу</button>
+        <button id="telegram-group">Группа в Telegram</button>
+      </div>
+    </div>
+
+    <div class="studentsTop">
+      <div class="numberTop">#</div>
+      <div class="nameTop">Имя</div>
+      <div class="surnameTop">Фамилия</div>
+      <div class="ageTop">Возраст</div>
+      <div class="actionsTop">Действия</div>
+    </div>
+    <div class="students"></div>
+  </main>
+
+  <div id="modal">
+    <div id="content">
+      <span>Добавить студента</span>
+      <form name="newStudent">
+        <input type="text" placeholder="Имя" name="name">
+        <input type="text" placeholder="Фамилия" name="surname">
+        <input type="number" placeholder="Возраст" name="age">
+        <button>Добавить</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="editModal">
+    <div id="editContent">
+      <span>Изменение данных студента</span>
+      <input id="editedName" type="text" placeholder="Имя">
+      <input id="editedSurname" type="text" placeholder="Фамилия">
+      <input id="editedAge" type="text" placeholder="Возраст">
+      <button id="editedAdmit">Изменить</button>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
